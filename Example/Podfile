@@ -1,0 +1,6 @@
+use_frameworks!
+target 'notifyvisitors_Tests' do
+  pod 'notifyvisitors', :path => '../'
+  
+  
+end

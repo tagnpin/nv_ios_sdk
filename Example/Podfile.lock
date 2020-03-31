@@ -1,0 +1,16 @@
+PODS:
+  - notifyvisitors (0.1.0)
+
+DEPENDENCIES:
+  - notifyvisitors (from `../`)
+
+EXTERNAL SOURCES:
+  notifyvisitors:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  notifyvisitors: 3faaef742ea45bdc4b570961b0c9e7e8f6dc7ef9
+
+PODFILE CHECKSUM: 8a20b37e0cc4d43b6ede456aca67f041f03e744a
+
+COCOAPODS: 1.9.1

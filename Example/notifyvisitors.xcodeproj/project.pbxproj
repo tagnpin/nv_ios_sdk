@@ -26,11 +26,11 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		6E2EE17F4BB1683B45C2A2FD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		6E2EE17F4BB1683B45C2A2FD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		9EF492018995B5245A483683 /* Pods_notifyvisitors_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_notifyvisitors_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC4E609238FCFF4180941171 /* Pods-notifyvisitors_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-notifyvisitors_Tests.release.xcconfig"; path = "Target Support Files/Pods-notifyvisitors_Tests/Pods-notifyvisitors_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		CEA17FCE3F1A9745A4447E89 /* notifyvisitors.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = notifyvisitors.podspec; path = ../notifyvisitors.podspec; sourceTree = "<group>"; };
-		E927133E6553ECE8009984BB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		CEA17FCE3F1A9745A4447E89 /* notifyvisitors.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = notifyvisitors.podspec; path = ../notifyvisitors.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E927133E6553ECE8009984BB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,7 +114,6 @@
 				13FE9BDDF1183C36B6C7208D /* Pods-notifyvisitors_Tests.debug.xcconfig */,
 				AC4E609238FCFF4180941171 /* Pods-notifyvisitors_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -160,6 +159,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);

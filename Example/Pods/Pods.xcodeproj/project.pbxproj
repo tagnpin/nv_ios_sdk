@@ -10,7 +10,8 @@
 		4E46D091F0F5F7C31010B8287D1E5D7B /* notifyvisitors-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F6CAD7D9C4F429CE0E8C5D5014CCAB01 /* notifyvisitors-dummy.m */; };
 		5DD8ED139A9042B0F593A2F457EB86EE /* Pods-notifyvisitors_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C601BC4E446EFC39260119FAE88B3096 /* Pods-notifyvisitors_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7DE86B4033ED0E34A8CB39B6A3FA0AED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		A2929529B4D49712381040525F1890E2 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D7A10C4C92AA7C6C2FC79620EA8536 /* ReplaceMe.m */; };
+		9DA1B687243337C600A69124 /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = 9DA1B685243337C600A69124 /* Assets */; };
+		9DA1B688243337C600A69124 /* Classes in Resources */ = {isa = PBXBuildFile; fileRef = 9DA1B686243337C600A69124 /* Classes */; };
 		A37270ED28D7570F15F25A6C22A8D56F /* notifyvisitors-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5059ABC7E530B3921E4AD2EFD35E93FA /* notifyvisitors-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B5F25917FBB9AC5C584B93D5C422F571 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		DE87C8B613FB03FF4970590BBE671CD4 /* Pods-notifyvisitors_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 981C8BD86C425C31D3C9CAC24FC19D58 /* Pods-notifyvisitors_Tests-dummy.m */; };
@@ -29,7 +30,7 @@
 /* Begin PBXFileReference section */
 		03A554A19A58ADAD3614DC9654C5EC81 /* Pods-notifyvisitors_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-notifyvisitors_Tests.modulemap"; sourceTree = "<group>"; };
 		079355DDF613C28EFED4B02F4B1DAB85 /* notifyvisitors.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = notifyvisitors.modulemap; sourceTree = "<group>"; };
-		20608A463C8AC8D99836571DE6BAD04D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		20608A463C8AC8D99836571DE6BAD04D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		2098BCB8159D2384CDA4ED5BE23F7322 /* notifyvisitors.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = notifyvisitors.debug.xcconfig; sourceTree = "<group>"; };
 		2CB6C985A753E38B2F0E4E5CF51B29DD /* Pods-notifyvisitors_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-notifyvisitors_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		311FAC1CDA741E490A7F133B6DF4CA1A /* Pods-notifyvisitors_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-notifyvisitors_Tests-Info.plist"; sourceTree = "<group>"; };
@@ -42,14 +43,15 @@
 		7495EB58CA67C3BE0F8D6FC4D1FA0DB7 /* Pods-notifyvisitors_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-notifyvisitors_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		7921B965D7F03E1E96BE16A282B28BA2 /* Pods-notifyvisitors_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-notifyvisitors_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		981C8BD86C425C31D3C9CAC24FC19D58 /* Pods-notifyvisitors_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-notifyvisitors_Tests-dummy.m"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		AF8C18A4A09EB83F9CEF3F9DA2306E18 /* notifyvisitors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = notifyvisitors.framework; path = notifyvisitors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BE07ECFEEDB1991E00ED942E3993D661 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9DA1B685243337C600A69124 /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Assets; path = notifyvisitors/Assets; sourceTree = "<group>"; };
+		9DA1B686243337C600A69124 /* Classes */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Classes; path = notifyvisitors/Classes; sourceTree = "<group>"; };
+		AF8C18A4A09EB83F9CEF3F9DA2306E18 /* notifyvisitors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = notifyvisitors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE07ECFEEDB1991E00ED942E3993D661 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C601BC4E446EFC39260119FAE88B3096 /* Pods-notifyvisitors_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-notifyvisitors_Tests-umbrella.h"; sourceTree = "<group>"; };
-		CCCEF609E5050BE31D176AAE84402F54 /* Pods_notifyvisitors_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_notifyvisitors_Tests.framework; path = "Pods-notifyvisitors_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D8D7A10C4C92AA7C6C2FC79620EA8536 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = notifyvisitors/Classes/ReplaceMe.m; sourceTree = "<group>"; };
+		CCCEF609E5050BE31D176AAE84402F54 /* Pods_notifyvisitors_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_notifyvisitors_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F133C452161479AFAC3CA342A12C768E /* Pods-notifyvisitors_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-notifyvisitors_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		F2A4A4E88603C76CA2765C7B48E8963C /* notifyvisitors.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = notifyvisitors.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F2A4A4E88603C76CA2765C7B48E8963C /* notifyvisitors.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = notifyvisitors.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F6CAD7D9C4F429CE0E8C5D5014CCAB01 /* notifyvisitors-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "notifyvisitors-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,7 +110,8 @@
 		7D82055704882BEC506F61B4496CF5E6 /* notifyvisitors */ = {
 			isa = PBXGroup;
 			children = (
-				D8D7A10C4C92AA7C6C2FC79620EA8536 /* ReplaceMe.m */,
+				9DA1B685243337C600A69124 /* Assets */,
+				9DA1B686243337C600A69124 /* Classes */,
 				87552AC0A24F88D94423A51384E3A3B5 /* Pod */,
 				042E9105B905BBBBB5CB7F84A022BB03 /* Support Files */,
 			);
@@ -277,6 +280,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DA1B687243337C600A69124 /* Assets in Resources */,
+				9DA1B688243337C600A69124 /* Classes in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,7 +301,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E46D091F0F5F7C31010B8287D1E5D7B /* notifyvisitors-dummy.m in Sources */,
-				A2929529B4D49712381040525F1890E2 /* ReplaceMe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,8 +499,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

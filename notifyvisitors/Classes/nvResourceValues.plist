@@ -24,16 +24,20 @@
 		<false/>
 		<key>nvDisableCopyCouponCodeButton</key>
 		<false/>
+		<key>nvDismissChatBotWindowOnInAppCallback</key>
+		<true/>
 	</dict>
 	<key>nvStrings</key>
 	<dict>
 		<key>nv_notificationCentreBackground</key>
 		<string>nv_NotificationCenterBg</string>
-		<key>nvNavigationBarBackground</key>
+		<key>nv_nc_NavigationBarBackgroundInNormalMode</key>
 		<string></string>
-		<key>nvNavigationBarTitle</key>
+		<key>nv_nc_NavigationBarBackgroundInDarkMode</key>
 		<string></string>
-		<key>nvNavigationBarTitleFont</key>
+		<key>nv_notificationCentreNavigationBarTitleText</key>
+		<string></string>
+		<key>nv_notificationCentreNavigationBarTitleFont</key>
 		<string></string>
 		<key>nvHeaderBackground</key>
 		<string></string>
@@ -61,14 +65,22 @@
 		<string></string>
 		<key>nvCopyCouponCodeValueFont</key>
 		<string></string>
+		<key>nv_ChatBotNavigationBarTitleFont</key>
+		<string></string>
 	</dict>
 	<key>nvColors</key>
 	<dict>
-		<key>nvstatusBarColor</key>
+		<key>nvStatusBarColorInNormalMode</key>
 		<string></string>
-		<key>nvNavigationBarTitleColor</key>
+		<key>nvStatusBarColorInDarkMode</key>
 		<string></string>
-		<key>nvNavigationBarButtonColor</key>
+		<key>nv_nc_NavigationBarTitleTextColorInNormalMode</key>
+		<string></string>
+		<key>nv_nc_NavigationBarTitleTextColorInDarkMode</key>
+		<string></string>
+		<key>nv_nc_NavigationBarButtonColorInNormalMode</key>
+		<string></string>
+		<key>nv_nc_NavigationBarButtonColorInDarkMode</key>
 		<string></string>
 		<key>nvHeaderTitleColor</key>
 		<string></string>
@@ -105,7 +117,7 @@
 	<dict>
 		<key>nvActivityIndicatorBgAlpha</key>
 		<integer>0</integer>
-		<key>nvNavigationBarTitleFontSize</key>
+		<key>nv_notificationCentreNavigationBarTitleFontSize</key>
 		<integer>0</integer>
 		<key>nvNavigationBarButtonSize</key>
 		<integer>0</integer>
@@ -141,6 +153,8 @@
 		<integer>0</integer>
 		<key>nvSessionTimeOutInSecond</key>
 		<integer>60</integer>
+		<key>nv_ChatBotNavigationBarTitleFontSize</key>
+		<integer>0</integer>
 	</dict>
 </dict>
 </plist>

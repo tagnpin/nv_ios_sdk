@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'notifyvisitors'
-  s.version          = '5.2.0'
+  s.version          = '5.2.1'
   s.summary          = 'Best multi channel Customer Engagement Software for Your Business'
 
 # This description is used to generate tags and improve search results.
@@ -31,7 +31,7 @@ Notifyvisitors is simplest marketing automation software to send personalised pu
   s.platform = :ios
   s.ios.deployment_target = '8.0'
   s.source_files = 'notifyvisitors/Classes/**/*.h'
-  s.resources = ['notifyvisitors/Assets/**/*.{png,jpg}', 'notifyvisitors/Classes/nvResourceValues.plist']
-  s.vendored_library = 'notifyvisitors/Classes/libnotifyvisitors_5_2_0.a'
+  s.resources = ['notifyvisitors/Assets/**/*.png', 'notifyvisitors/Classes/nvResourceValues.plist']
+  s.vendored_library = 'notifyvisitors/Classes/libnotifyvisitors_5_2_1.a'
   s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
 end

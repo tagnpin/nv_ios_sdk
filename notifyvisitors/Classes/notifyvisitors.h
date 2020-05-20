@@ -17,9 +17,14 @@ typedef void(^nvGetCount)(NSInteger);
 typedef void(^NotificationClickResponseData)(NSMutableDictionary* _Nullable);
 extern  NSString * _Nonnull  NVInAppViewConroller;
 
+@protocol notifyvisitorsChatBotDelegate <NSObject>
+
+@optional
+-(void)NotifyvisitorsChatBotActionCallbackWithUserInfo:(NSDictionary*_Nullable)userInfo;
+@end
+
 #if defined(__IPHONE_10_0) && __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_10_0
 #import <UserNotifications/UserNotifications.h>
-
 @interface notifyvisitors : NSObject <UNUserNotificationCenterDelegate>
 
 //# << iOS 10 Push notification delegate and service extension methods
@@ -38,6 +43,7 @@ extern  NSString * _Nonnull  NVInAppViewConroller;
 
 @interface notifyvisitors : NSObject
 #endif
+
 +(void)Initialize:(NSString *_Nullable)nvMode;
 
 +(void)RegisterPushWithDelegate:(id _Nullable)delegate App:(UIApplication * _Nullable)application launchOptions:(NSDictionary *_Nullable)launchOptions;
@@ -64,7 +70,6 @@ extern  NSString * _Nonnull  NVInAppViewConroller;
 +(void)GetUnreadPushNotification:(nvGetCount _Nullable )UnreadCount;
 
 //+(NSInteger)GetUnreadPushNotification;
-+(UIViewController* _Nullable) topMostController;
 //+(NSMutableArray * _Nullable)GetNotificationCentreData;
 + (void)GetNotificationCentreData:(NotificationListData _Nullable) notificationDataList;
 
@@ -89,4 +94,6 @@ extern  NSString * _Nonnull  NVInAppViewConroller;
 +(void)applicationWillTerminate;
 +(void)stopPushNotification:(BOOL)pushStatus;
 +(void)stopGeofencePushforDateTime:(NSString *_Nullable)nvDateTime additionalHours: (NSInteger)nvtimeinHours;
++(void)setChatBotDelegate:(id _Nullable)aDelegate;
++(void)startChatBotWithScreenName:(NSString *_Nullable)nvBotScreenName;
 @end

@@ -9,9 +9,14 @@
 
 
 #import <Foundation/Foundation.h>
+#if defined(__IPHONE_14_0) && __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_14_0
+#import <AppTrackingTransparency/AppTrackingTransparency.h>
+#endif
+
 #import <AdSupport/AdSupport.h>
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
+#import <WebKit/WebKit.h>
 typedef void(^NotificationListData)(NSMutableArray* _Nullable);
 typedef void(^nvGetCount)(NSInteger);
 typedef void(^NotificationClickResponseData)(NSMutableDictionary* _Nullable);
@@ -23,6 +28,7 @@ typedef void(^nv_UID)(NSString *_Nullable);
 @optional
 -(void)NotifyvisitorsChatBotActionCallbackWithUserInfo:(NSDictionary*_Nullable)userInfo;
 @end
+
 
 #if defined(__IPHONE_10_0) && __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_10_0
 #import <UserNotifications/UserNotifications.h>

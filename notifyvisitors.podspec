@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'notifyvisitors'
-  s.version          = '5.2.4'
+  s.version          = '5.2.5'
   s.summary          = 'Best multi channel Customer Engagement Software for Your Business'
 
 # This description is used to generate tags and improve search results.

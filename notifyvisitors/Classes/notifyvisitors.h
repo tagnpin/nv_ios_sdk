@@ -16,7 +16,6 @@
 #import <AdSupport/AdSupport.h>
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
-#import <WebKit/WebKit.h>
 typedef void(^NotificationListData)(NSMutableArray* _Nullable);
 typedef void(^nvGetCount)(NSInteger);
 typedef void(^NotificationClickResponseData)(NSMutableDictionary* _Nullable);
@@ -72,7 +71,7 @@ typedef void(^nv_UID)(NSString *_Nullable);
 
 +(void)schedulePushNotificationwithNotificationID:(NSString * _Nullable)NID Tag:(NSString * _Nullable)tag TimeinSecond:(NSString * _Nullable)time Title:(NSString * _Nullable)title  Message:(NSString * _Nullable)message URL:(NSString * _Nullable)url  Icon:(NSString * _Nullable)icon;
 
-+(void)checkFetchClickComplete:(NSTimer * _Nullable)timer;
+//+(void)checkFetchClickComplete:(NSTimer * _Nullable)timer;
 +(void)NotifyVisitorsNotificationCentre;
 +(void)GetUnreadPushNotification:(nvGetCount _Nullable )UnreadCount;
 
@@ -104,4 +103,6 @@ typedef void(^nv_UID)(NSString *_Nullable);
 +(void)setChatBotDelegate:(id _Nullable)aDelegate;
 +(void)startChatBotWithScreenName: (NSString *_Nullable)nvBotScreenName;
 +(void)getNvUid:(nv_UID _Nullable)nvUID;
+
++(void)nvSceduleWaitingFunctionsWithData:(NSDictionary *_Nullable)nvWaitingFunctionData;
 @end

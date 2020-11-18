@@ -34,4 +34,8 @@ Notifyvisitors is simplest marketing automation software to send personalised pu
   s.resources = ['notifyvisitors/Assets/**/*.png', 'notifyvisitors/Classes/nvResourceValues.plist']
   s.vendored_library = 'notifyvisitors/Classes/**/*.a'
   s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
+  s.pod_target_xcconfig = {
+      'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
+    }
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 end

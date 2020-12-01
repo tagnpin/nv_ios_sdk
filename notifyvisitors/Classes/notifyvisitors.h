@@ -9,13 +9,10 @@
 
 
 #import <Foundation/Foundation.h>
-#if defined(__IPHONE_14_0) && __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_14_0
-#import <AppTrackingTransparency/AppTrackingTransparency.h>
-#endif
-
 #import <AdSupport/AdSupport.h>
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
+
 typedef void(^NotificationListData)(NSMutableArray* _Nullable);
 typedef void(^nvGetCount)(NSInteger);
 typedef void(^NotificationClickResponseData)(NSMutableDictionary* _Nullable);
@@ -28,6 +25,11 @@ typedef void(^nv_UID)(NSString *_Nullable);
 -(void)NotifyvisitorsChatBotActionCallbackWithUserInfo:(NSDictionary*_Nullable)userInfo;
 @end
 
+
+
+#if defined(__IPHONE_14_0) && __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_14_0
+#import <AppTrackingTransparency/AppTrackingTransparency.h>
+#endif
 
 #if defined(__IPHONE_10_0) && __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_10_0
 #import <UserNotifications/UserNotifications.h>
@@ -103,6 +105,4 @@ typedef void(^nv_UID)(NSString *_Nullable);
 +(void)setChatBotDelegate:(id _Nullable)aDelegate;
 +(void)startChatBotWithScreenName: (NSString *_Nullable)nvBotScreenName;
 +(void)getNvUid:(nv_UID _Nullable)nvUID;
-
-+(void)nvSceduleWaitingFunctionsWithData:(NSDictionary *_Nullable)nvWaitingFunctionData;
 @end

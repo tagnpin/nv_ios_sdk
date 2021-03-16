@@ -97,7 +97,7 @@
 		<key>nvNotificationContentMsgColor</key>
 		<string></string>
 		<key>nvCtaButtonBackgroundColor</key>
-		<string></string>
+		<string>#FF0000</string>
 		<key>nvCtaButtonBorderColor</key>
 		<string></string>
 		<key>nvCtaBtton1TextColor</key>
@@ -155,6 +155,10 @@
 		<integer>0</integer>
 		<key>nvDefaultSessionTimeOutInMinute</key>
 		<integer>20</integer>
+		<key>nvModalSurveyResizingAnimationDurationInSeconds</key>
+		<integer>0</integer>
+		<key>nvModalSurveyResizingBottomPadding</key>
+		<integer>0</integer>
 	</dict>
 </dict>
 </plist>

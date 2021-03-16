@@ -19,10 +19,12 @@ typedef void(^NotificationClickResponseData)(NSMutableDictionary* _Nullable);
 typedef void(^nv_UID)(NSString *_Nullable);
 //extern  NSString * _Nonnull  NVInAppViewController1;
 
-@protocol notifyvisitorsChatBotDelegate <NSObject>
+@protocol notifyvisitorsDelegate <NSObject>
 
 @optional
 -(void)NotifyvisitorsChatBotActionCallbackWithUserInfo:(NSDictionary*_Nullable)userInfo;
+
+-(void)NotifyvisitorsGetEventResponseWithUserInfo:(NSDictionary*_Nullable)userInfo;
 @end
 
 
@@ -51,15 +53,18 @@ typedef void(^nv_UID)(NSString *_Nullable);
 
 @interface notifyvisitors : NSObject
 #endif
+@property (nonatomic, weak)id <notifyvisitorsDelegate> _Nullable delegate;
 
++(instancetype _Nullable )sharedInstance;
 +(void)Initialize:(NSString *_Nullable)nvMode;
 
 +(void)RegisterPushWithDelegate:(id _Nullable)delegate App:(UIApplication * _Nullable)application launchOptions:(NSDictionary *_Nullable)launchOptions;
 +(void)DidRegisteredNotification:(UIApplication *_Nullable)application deviceToken:(NSData * _Nullable)deviceToken;
-+(void)didReceiveRemoteNotificationWithUserInfofor_iOS7orBelow:(NSDictionary * _Nullable)userInfo;
++(void)didReceiveRemoteNotificationWithUserInfofor_iOS7orBelow:(NSDictionary *_Nullable)userInfo;
+
 +(void)didReceiveRemoteNotificationWithUserInfo:(NSDictionary * _Nullable)userInfo;
 
-+(NSMutableDictionary * _Nullable)PushNotificationActionDataFromUserInfo:(NSDictionary * _Nullable)userinfo;
++(NSMutableDictionary * _Nullable)PushNotificationActionDataFromUserInfo:(NSDictionary *_Nullable)userinfo;
 
 +(void)OpenUrlWithApplication:(UIApplication *_Nullable)application Url:(NSURL *_Nullable)url;
 +(NSMutableDictionary* _Nullable)OpenUrlGetDataWithApplication: (UIApplication * _Nullable)application Url:(NSURL * _Nullable)url;
@@ -102,7 +107,9 @@ typedef void(^nv_UID)(NSString *_Nullable);
 +(void)StopInAppNotifications;
 +(void)stopPushNotification:(BOOL)pushStatus;
 +(void)stopGeofencePushforDateTime:(NSString *_Nullable)nvDateTime additionalHours: (NSInteger)nvtimeinHours;
-+(void)setChatBotDelegate:(id _Nullable)aDelegate;
+//+(void)setChatBotDelegate:(id _Nullable)aDelegate;
+
+
 +(void)startChatBotWithScreenName: (NSString *_Nullable)nvBotScreenName;
 +(void)getNvUid:(nv_UID _Nullable)nvUID;
 @end

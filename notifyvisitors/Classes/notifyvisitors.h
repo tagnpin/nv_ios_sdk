@@ -28,11 +28,6 @@ typedef void(^nv_UID)(NSString *_Nullable);
 @end
 
 
-
-#if defined(__IPHONE_14_0) && __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_14_0
-#import <AppTrackingTransparency/AppTrackingTransparency.h>
-#endif
-
 #if defined(__IPHONE_10_0) && __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_10_0
 #import <UserNotifications/UserNotifications.h>
 @interface notifyvisitors : NSObject <UNUserNotificationCenterDelegate>
@@ -113,3 +108,4 @@ typedef void(^nv_UID)(NSString *_Nullable);
 +(void)startChatBotWithScreenName: (NSString *_Nullable)nvBotScreenName;
 +(void)getNvUid:(nv_UID _Nullable)nvUID;
 @end
+

@@ -26,6 +26,33 @@ typedef void(^nv_UID)(NSString *_Nullable);
 -(void)NotifyvisitorsGetEventResponseWithUserInfo:(NSDictionary*_Nullable)userInfo;
 @end
 
+@interface NVCenterStyleConfig : NSObject
+
+@property (strong, nonatomic, nullable)UIColor *unselectedTabTextColor;
+
+@property (strong, nonatomic, nullable)UIColor *selectedTabTextColor;
+
+@property (strong, nonatomic, nullable)UIColor *selectedTabBgColor;
+@property (strong, nonatomic, nullable)UIColor *unselectedTabBgColor;
+
+@property (nonatomic)NSInteger selectedTabIndex;
+@property (strong, nonatomic, nullable)UIFont *tabTextfont;
+
++(instancetype _Nullable )sharedInstance;
+
+-(void)setFirstTabWithTabLable:(NSString *_Nonnull)tabLabel TagDisplayName:(NSString *_Nonnull)tabDisplayName;
+
+-(void)setSecondTabWithTabLable:(NSString *_Nonnull)tabLabel TagDisplayName:(NSString *_Nonnull)tabDisplayName;
+
+-(void)setThirdTabWithTabLable:(NSString *_Nonnull)tabLabel TagDisplayName:(NSString *_Nonnull)tabDisplayName;
+
+
+
+
+@end
+
+
+
 
 #if defined(__IPHONE_10_0) && __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_10_0
 #import <UserNotifications/UserNotifications.h>
@@ -74,6 +101,9 @@ typedef void(^nv_UID)(NSString *_Nullable);
 
 //+(void)checkFetchClickComplete:(NSTimer * _Nullable)timer;
 +(void)NotifyVisitorsNotificationCentre;
++(void)notificationCenterWithConfiguration:(NVCenterStyleConfig *_Nullable)configuration;
+
+
 +(void)GetUnreadPushNotification:(nvGetCount _Nullable )UnreadCount;
 
 //+(NSInteger)GetUnreadPushNotification;
@@ -106,5 +136,29 @@ typedef void(^nv_UID)(NSString *_Nullable);
 
 +(void)startChatBotWithScreenName: (NSString *_Nullable)nvBotScreenName;
 +(void)getNvUid:(nv_UID _Nullable)nvUID;
+
+
+
 @end
 
+
+
+
+
+//
+//@property (nonatomic, strong, nullable) NSString *title;
+//@property (nonatomic, strong, nullable) UIColor *backgroundColor;
+//@property (nonatomic, strong, nullable) NSArray *messageTags;
+//@property (nonatomic, strong, nullable) UIColor *navigationBarTintColor;
+//@property (nonatomic, strong, nullable) UIColor *navigationTintColor;
+//@property (nonatomic, strong, nullable) UIColor *tabSelectedBgColor;
+//@property (nonatomic, strong, nullable) UIColor *tabSelectedTextColor;
+//@property (nonatomic, strong, nullable) UIColor *tabUnSelectedTextColor;
+//@property (nonatomic, strong, nullable) NSString *noMessageViewText;
+//@property (nonatomic, strong, nullable) UIColor *noMessageViewTextColor;
+//@property (nonatomic, strong, nullable) NSString *firstTabTitle;
+//
+
+//
+//
+//

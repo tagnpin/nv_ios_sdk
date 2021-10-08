@@ -136,6 +136,8 @@ typedef void(^nv_UID)(NSString *_Nullable);
 
 +(void)startChatBotWithScreenName: (NSString *_Nullable)nvBotScreenName;
 +(void)getNvUid:(nv_UID _Nullable)nvUID;
++(void)requestAppleAppStoreInAppReview;
+
 
 
 

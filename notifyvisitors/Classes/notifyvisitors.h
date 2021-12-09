@@ -37,6 +37,11 @@ typedef void(^nv_UID)(NSString *_Nullable);
 
 @property (nonatomic)NSInteger selectedTabIndex;
 @property (strong, nonatomic, nullable)UIFont *tabTextfont;
+//@property (strong, nonatomic, nullable)UIFont *tabBadgeCountfont;
+@property (strong, nonatomic, nullable)UIColor *tabBadgeCountBorderColor;
+@property (strong, nonatomic, nullable)UIColor *tabBadgeCountFillColor;
+@property (strong, nonatomic, nullable)UIColor *tabBadgeCountTextColor;
+@property (nonatomic)BOOL shouldTabBadgeShine;
 
 +(instancetype _Nullable )sharedInstance;
 
@@ -45,9 +50,6 @@ typedef void(^nv_UID)(NSString *_Nullable);
 -(void)setSecondTabWithTabLable:(NSString *_Nonnull)tabLabel TagDisplayName:(NSString *_Nonnull)tabDisplayName;
 
 -(void)setThirdTabWithTabLable:(NSString *_Nonnull)tabLabel TagDisplayName:(NSString *_Nonnull)tabDisplayName;
-
-
-
 
 @end
 
@@ -99,6 +101,7 @@ typedef void(^nv_UID)(NSString *_Nullable);
 
 +(void)schedulePushNotificationwithNotificationID:(NSString * _Nullable)NID Tag:(NSString * _Nullable)tag TimeinSecond:(NSString * _Nullable)time Title:(NSString * _Nullable)title  Message:(NSString * _Nullable)message URL:(NSString * _Nullable)url  Icon:(NSString * _Nullable)icon;
 
++(void)pushPreferences:(NSArray*_Nullable)preferenceList;
 //+(void)checkFetchClickComplete:(NSTimer * _Nullable)timer;
 +(void)NotifyVisitorsNotificationCentre;
 +(void)notificationCenterWithConfiguration:(NVCenterStyleConfig *_Nullable)configuration;

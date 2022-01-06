@@ -37,7 +37,6 @@ typedef void(^nv_UID)(NSString *_Nullable);
 
 @property (nonatomic)NSInteger selectedTabIndex;
 @property (strong, nonatomic, nullable)UIFont *tabTextfont;
-//@property (strong, nonatomic, nullable)UIFont *tabBadgeCountfont;
 @property (strong, nonatomic, nullable)UIColor *tabBadgeCountBorderColor;
 @property (strong, nonatomic, nullable)UIColor *tabBadgeCountFillColor;
 @property (strong, nonatomic, nullable)UIColor *tabBadgeCountTextColor;
@@ -66,7 +65,7 @@ typedef void(^nv_UID)(NSString *_Nullable);
 +(void)willPresentNotification:(UNNotification *_Nullable)notification withCompletionHandler:(void (^_Nullable)(UNNotificationPresentationOptions options))completionHandler API_AVAILABLE(ios(10.0));
 +(void)didReceiveNotificationResponse:(UNNotificationResponse *_Nullable)response API_AVAILABLE(ios(10.0));
 +(void)PushNotificationActionDataFromResponse:(UNNotificationResponse *_Nullable)response AutoRedirectOtherApps:(BOOL)autoRedirect clickResponseData:(NotificationClickResponseData _Nullable)pushClickResponse API_AVAILABLE(ios(10.0));
-//+(NSMutableDictionary *)PushNotificationActionDataFromResponse:(UNNotificationResponse *)response AutoRedirectOtherApps:(BOOL)autoRedirect API_AVAILABLE(ios(10.0));
+
 +(void)didReceiveRemoteNotification:(NSDictionary *_Nullable)userInfo fetchCompletionHandler:(void(^_Nullable)(UIBackgroundFetchResult))completionHandler;
 #else
 
@@ -101,20 +100,15 @@ typedef void(^nv_UID)(NSString *_Nullable);
 
 +(void)schedulePushNotificationwithNotificationID:(NSString * _Nullable)NID Tag:(NSString * _Nullable)tag TimeinSecond:(NSString * _Nullable)time Title:(NSString * _Nullable)title  Message:(NSString * _Nullable)message URL:(NSString * _Nullable)url  Icon:(NSString * _Nullable)icon;
 
-+(void)pushPreferences:(NSArray*_Nullable)preferenceList;
-//+(void)checkFetchClickComplete:(NSTimer * _Nullable)timer;
++(void)pushPreferences:(NSArray*_Nullable)preferenceList isUnsubscribeFromAll:(BOOL)shouldUnsubscribe;
 +(void)NotifyVisitorsNotificationCentre;
 +(void)notificationCenterWithConfiguration:(NVCenterStyleConfig *_Nullable)configuration;
 
 
 +(void)GetUnreadPushNotification:(nvGetCount _Nullable )UnreadCount;
-
-//+(NSInteger)GetUnreadPushNotification;
-//+(NSMutableArray * _Nullable)GetNotificationCentreData;
++(NSString *_Nullable)getPushRegistrationToken;
 + (void)GetNotificationCentreData:(NotificationListData _Nullable) notificationDataList;
-
 +(void)NotifyVisitorsGeofencing;
-
 +(void) NotifyVisitorsGeofencingReceivedNotificationWithApplication: (UIApplication * _Nullable) application window: (UIWindow * _Nullable) window didReceiveGeofencingNotification:(UILocalNotification * _Nullable) notification;
 
 +(void)HandleLocalNotifications: (UILocalNotification *_Nullable) notification;
@@ -132,38 +126,10 @@ typedef void(^nv_UID)(NSString *_Nullable);
 
 +(void)DismissAllNotifyvisitorsInAppNotifications;
 +(void)StopInAppNotifications;
-+(void)stopPushNotification:(BOOL)pushStatus;
 +(void)stopGeofencePushforDateTime:(NSString *_Nullable)nvDateTime additionalHours: (NSInteger)nvtimeinHours;
-//+(void)setChatBotDelegate:(id _Nullable)aDelegate;
-
 
 +(void)startChatBotWithScreenName: (NSString *_Nullable)nvBotScreenName;
 +(void)getNvUid:(nv_UID _Nullable)nvUID;
 +(void)requestAppleAppStoreInAppReview;
 
-
-
-
 @end
-
-
-
-
-
-//
-//@property (nonatomic, strong, nullable) NSString *title;
-//@property (nonatomic, strong, nullable) UIColor *backgroundColor;
-//@property (nonatomic, strong, nullable) NSArray *messageTags;
-//@property (nonatomic, strong, nullable) UIColor *navigationBarTintColor;
-//@property (nonatomic, strong, nullable) UIColor *navigationTintColor;
-//@property (nonatomic, strong, nullable) UIColor *tabSelectedBgColor;
-//@property (nonatomic, strong, nullable) UIColor *tabSelectedTextColor;
-//@property (nonatomic, strong, nullable) UIColor *tabUnSelectedTextColor;
-//@property (nonatomic, strong, nullable) NSString *noMessageViewText;
-//@property (nonatomic, strong, nullable) UIColor *noMessageViewTextColor;
-//@property (nonatomic, strong, nullable) NSString *firstTabTitle;
-//
-
-//
-//
-//

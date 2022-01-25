@@ -6,17 +6,16 @@
 //  Copyright © 2016 notifyvisitors. All rights reserved.
 //
 
-
-
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
 
 typedef void(^NotificationListData)(NSMutableArray* _Nullable);
 typedef void(^nvGetCount)(NSInteger);
+typedef void(^nvUnreadCenterCount)(NSDictionary* _Nullable);
+
 typedef void(^NotificationClickResponseData)(NSMutableDictionary* _Nullable);
 typedef void(^nv_UID)(NSString *_Nullable);
-//extern  NSString * _Nonnull  NVInAppViewController1;
 
 @protocol notifyvisitorsDelegate <NSObject>
 
@@ -59,13 +58,10 @@ typedef void(^nv_UID)(NSString *_Nullable);
 #import <UserNotifications/UserNotifications.h>
 @interface notifyvisitors : NSObject <UNUserNotificationCenterDelegate>
 
-//# << iOS 10 Push notification delegate and service extension methods
-
 +(void)LoadAttachmentWithRequest:(UNNotificationRequest *_Nullable)request bestAttemptContent:(UNMutableNotificationContent *_Nullable)bestAttemptContent withContentHandler:(nullable void (^)(UNNotificationContent * _Nonnull))contentHandler API_AVAILABLE(ios(10.0));
 +(void)willPresentNotification:(UNNotification *_Nullable)notification withCompletionHandler:(void (^_Nullable)(UNNotificationPresentationOptions options))completionHandler API_AVAILABLE(ios(10.0));
 +(void)didReceiveNotificationResponse:(UNNotificationResponse *_Nullable)response API_AVAILABLE(ios(10.0));
 +(void)PushNotificationActionDataFromResponse:(UNNotificationResponse *_Nullable)response AutoRedirectOtherApps:(BOOL)autoRedirect clickResponseData:(NotificationClickResponseData _Nullable)pushClickResponse API_AVAILABLE(ios(10.0));
-
 +(void)didReceiveRemoteNotification:(NSDictionary *_Nullable)userInfo fetchCompletionHandler:(void(^_Nullable)(UIBackgroundFetchResult))completionHandler;
 #else
 
@@ -106,9 +102,15 @@ typedef void(^nv_UID)(NSString *_Nullable);
 
 
 +(void)GetUnreadPushNotification:(nvGetCount _Nullable )UnreadCount;
++(void)getNotificationCenterCountWithConfiguration:(NVCenterStyleConfig *_Nullable)configuration countResult:(nvUnreadCenterCount _Nullable )unreadCenterCounts;
+
+
 +(NSString *_Nullable)getPushRegistrationToken;
-+ (void)GetNotificationCentreData:(NotificationListData _Nullable) notificationDataList;
+
++(void)GetNotificationCentreData:(NotificationListData _Nullable) notificationDataList;
+
 +(void)NotifyVisitorsGeofencing;
+
 +(void) NotifyVisitorsGeofencingReceivedNotificationWithApplication: (UIApplication * _Nullable) application window: (UIWindow * _Nullable) window didReceiveGeofencingNotification:(UILocalNotification * _Nullable) notification;
 
 +(void)HandleLocalNotifications: (UILocalNotification *_Nullable) notification;

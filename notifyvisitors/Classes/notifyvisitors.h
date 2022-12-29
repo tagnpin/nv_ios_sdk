@@ -10,6 +10,12 @@
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
 
+typedef NS_ENUM(NSUInteger, nvPushBadgeCount){
+    nvPushBadgeCountIncreaseByOne,
+    nvPushBadgeCountDecreaseByOne,
+    nvPushBadgeCountClearAll
+};
+
 typedef void(^NotificationListData)(NSMutableArray* _Nullable);
 typedef void(^nvGetCount)(NSInteger);
 typedef void(^nvUnreadCenterCount)(NSDictionary* _Nullable);
@@ -133,5 +139,8 @@ typedef void(^nv_UID)(NSString *_Nullable);
 +(void)startChatBotWithScreenName: (NSString *_Nullable)nvBotScreenName;
 +(void)getNvUid:(nv_UID _Nullable)nvUID;
 +(void)requestAppleAppStoreInAppReview;
+
++(void)updatePushBadgeNumberWithValue:(nvPushBadgeCount)nvPushBadgeNumber;
+
 
 @end

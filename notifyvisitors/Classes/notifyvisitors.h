@@ -95,17 +95,21 @@ typedef void(^nv_UID)(NSString *_Nullable);
 
 +(void)Show:(NSMutableDictionary * _Nullable)UserTokens CustomRule:(NSMutableDictionary  * _Nullable)customRule;
 +(void)UserIdentifier:(NSString *_Nullable) userID UserParams:(NSMutableDictionary * _Nullable) UserParams;
-+(void)checkSetupComplete:(NSTimer * _Nullable)timer;
+//+(void)checkSetupComplete:(NSTimer * _Nullable)timer;
 +(void)scrollViewDidScroll:(UIScrollView * _Nullable) scrollView;
-+(BOOL)isScrolled:(NSString * _Nullable)NotificationID;
+//+(BOOL)isScrolled:(NSString * _Nullable)NotificationID;
 +(void)trackEvents:(NSString * _Nullable)event_name Attributes:(NSMutableDictionary * _Nullable)attributes lifetimeValue:(NSString * _Nullable)ltv Scope:(int)scope;
 
 +(void)schedulePushNotificationwithNotificationID:(NSString * _Nullable)NID Tag:(NSString * _Nullable)tag TimeinSecond:(NSString * _Nullable)time Title:(NSString * _Nullable)title  Message:(NSString * _Nullable)message URL:(NSString * _Nullable)url  Icon:(NSString * _Nullable)icon;
 
 +(void)pushPreferences:(NSArray*_Nullable)preferenceList isUnsubscribeFromAll:(BOOL)shouldUnsubscribe;
-+(void)NotifyVisitorsNotificationCentre;
-+(void)notificationCenterWithConfiguration:(NVCenterStyleConfig *_Nullable)configuration;
 
+
++(void)NotifyVisitorsNotificationCentre DEPRECATED_MSG_ATTRIBUTE("first deprecated in Notifyvisitors iOS SDK 6.4.3 Use [notifyvisitors notificationCenter:] (see notifyvisitors.h)");
+
++(void)notificationCenter;
+
++(void)notificationCenterWithConfiguration:(NVCenterStyleConfig *_Nullable)configuration;
 
 +(void)GetUnreadPushNotification:(nvGetCount _Nullable )UnreadCount;
 +(void)getNotificationCenterCountWithConfiguration:(NVCenterStyleConfig *_Nullable)configuration countResult:(nvUnreadCenterCount _Nullable )unreadCenterCounts;
@@ -115,17 +119,7 @@ typedef void(^nv_UID)(NSString *_Nullable);
 
 +(void)GetNotificationCentreData:(NotificationListData _Nullable) notificationDataList;
 
-+(void)NotifyVisitorsGeofencing;
-
-+(void) NotifyVisitorsGeofencingReceivedNotificationWithApplication: (UIApplication * _Nullable) application window: (UIWindow * _Nullable) window didReceiveGeofencingNotification:(UILocalNotification * _Nullable) notification;
-
-+(void)HandleLocalNotifications: (UILocalNotification *_Nullable) notification;
-
-+(void)NotifyVisitorsGeofencingApplicationDidEnterBackground:(UIApplication *_Nullable)application DEPRECATED_MSG_ATTRIBUTE("first deprecated in Notifyvisitors iOS SDK 4.1.0 Use [notifyvisitors applicationDidEnterBackground:] (see notifyvisitors.h)");
-
-//API_DEPRECATED(@"%@ %@",nvDeprecatedInSDKVersion, nvGeoDeprecatedInBackgroundMsg);
-+(void)NotifyVisitorsGeofencingapplicationDidBecomeActive:(UIApplication *_Nullable)application DEPRECATED_MSG_ATTRIBUTE("first deprecated in Notifyvisitors iOS SDK 4.1.0 Use [notifyvisitors applicationDidBecomeActive:] (see notifyvisitors.h)");
-
++(void)startGeofenceMonitoringWithOptions:(NSDictionary *_Nullable)launchOptions;
 
 +(void)applicationDidEnterBackground:(UIApplication *_Nullable)application;
 +(void)applicationDidBecomeActive:(UIApplication *_Nullable)application;
@@ -133,14 +127,13 @@ typedef void(^nv_UID)(NSString *_Nullable);
 +(void)applicationWillTerminate;
 
 +(void)DismissAllNotifyvisitorsInAppNotifications;
+
 +(void)StopInAppNotifications;
 +(void)stopGeofencePushforDateTime:(NSString *_Nullable)nvDateTime additionalHours: (NSInteger)nvtimeinHours;
 
 +(void)startChatBotWithScreenName: (NSString *_Nullable)nvBotScreenName;
 +(void)getNvUid:(nv_UID _Nullable)nvUID;
 +(void)requestAppleAppStoreInAppReview;
-
 +(void)updatePushBadgeNumberWithValue:(nvPushBadgeCount)nvPushBadgeNumber;
-
 
 @end

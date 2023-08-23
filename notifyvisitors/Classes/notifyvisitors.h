@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import <CoreLocation/CoreLocation.h>
 
 typedef NS_ENUM(NSUInteger, nvPushBadgeCount){
     nvPushBadgeCountIncreaseByOne,
@@ -119,8 +118,6 @@ typedef void(^nv_UID)(NSString *_Nullable);
 
 +(void)GetNotificationCentreData:(NotificationListData _Nullable) notificationDataList;
 
-+(void)startGeofenceMonitoringWithOptions:(NSDictionary *_Nullable)launchOptions;
-
 +(void)applicationDidEnterBackground:(UIApplication *_Nullable)application;
 +(void)applicationDidBecomeActive:(UIApplication *_Nullable)application;
 +(void)applicationWillEnterForeground:(UIApplication *_Nullable)application;
@@ -135,5 +132,6 @@ typedef void(^nv_UID)(NSString *_Nullable);
 +(void)getNvUid:(nv_UID _Nullable)nvUID;
 +(void)requestAppleAppStoreInAppReview;
 +(void)updatePushBadgeNumberWithValue:(nvPushBadgeCount)nvPushBadgeNumber;
+
 
 @end

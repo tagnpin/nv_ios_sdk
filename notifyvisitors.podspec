@@ -8,35 +8,26 @@
 
 Pod::Spec.new do |s|
   s.name             = 'notifyvisitors'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of notifyvisitors.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
+  s.version          = '7.0.1'
+  s.summary          = 'Best multi channel Customer Engagement Software for Your Business'
+  
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  Notifyvisitors is simplest marketing automation software to send personalised push. Trusted by 6000+ Customers and it is the best multi channel Customer Engagement Software for Your Business notifications and messages to customers. it is a Marketing Automation Software with AI and Machine learning powered Personalisation, Segmentation, Omnichannel and Cross-Device Customer Engagement, Conversion rate optimization and Analytics Software. Multi Channels. Multi Platforms.
+                         DESC
 
-  s.homepage         = 'https://github.com/ashraf-nv/notifyvisitors'
+  s.homepage         = 'https://github.com/tagnpin/nv_ios_sdk'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'ashraf-nv' => 'ashraf@notifyvisitors.com' }
-  s.source           = { :git => 'https://github.com/ashraf-nv/notifyvisitors.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-  s.ios.deployment_target = '10.0'
-
-  s.source_files = 'notifyvisitors/Classes/**/*'
+  s.author           = { 'Mohammad Ashraf Ali' => 'ashraf@notifyvisitors.com' }
+  s.source           = { :git => 'https://github.com/tagnpin/nv_ios_sdk.git', :tag => s.version.to_s }
   
-  # s.resource_bundles = {
-  #   'notifyvisitors' => ['notifyvisitors/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.platform         = :ios
+  s.ios.deployment_target = '11.0'
+  s.requires_arc     = true
+  s.preserve_path    = 'notifyvisitors.xcframework'
+  s.vendored_frameworks = 'notifyvisitors.xcframework'
+  s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
+  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+    
 end

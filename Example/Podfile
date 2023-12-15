@@ -1,13 +1,15 @@
 use_frameworks!
 
-platform :ios, '10.0'
+platform :ios, '11.0'
 
 target 'notifyvisitors_Example' do
-  pod 'notifyvisitors', :path => '../'
+  pod 'notifyvisitors'
 
   target 'notifyvisitors_Tests' do
     inherit! :search_paths
-
-    
   end
+end
+
+target 'NotificationServiceExtension' do
+  pod 'notifyvisitors'
 end

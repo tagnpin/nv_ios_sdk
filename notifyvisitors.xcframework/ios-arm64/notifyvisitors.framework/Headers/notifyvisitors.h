@@ -34,7 +34,7 @@ typedef void(^nv_UID)(NSString *_Nullable);
 @protocol notifyvisitorsDelegate <NSObject>
 
 @optional
--(void)NotifyvisitorsGetEventResponseWithUserInfo:(NSDictionary*_Nullable)userInfo;
+-(void)NotifyvisitorsGetEventResponseWithUserInfo:(NSDictionary*_Nullable)userInfo DEPRECATED_MSG_ATTRIBUTE("first deprecated in Notifyvisitors iOS SDK 7.0.1 Use [notifyvisitors notifyvisitorsEventsResponseCallback:] (see notifyvisitors.h)");
 -(void)notifyvisitorsEventsResponseCallback:(NSDictionary*_Nullable)callback;
 @end
 
@@ -129,7 +129,12 @@ typedef void(^nv_UID)(NSString *_Nullable);
 
 +(void)notificationCenter;
 +(void)notificationCenterWithConfiguration:(NVCenterStyleConfig *_Nullable)configuration;
-+(void)GetNotificationCentreData:(NotificationListData _Nullable ) notificationDataList;
++(void)GetNotificationCentreData:(NotificationListData _Nullable ) notificationDataList DEPRECATED_MSG_ATTRIBUTE("first deprecated in Notifyvisitors iOS SDK 7.0.2 Use [notifyvisitors getNotificationCenterData:] to get reformated data response in NSDictionary format. (see notifyvisitors.h)");
+
++(void)getNotificationCenterData:(void(^_Nullable)(NSDictionary *_Nullable))notificationsData;
+
+
+//GetNotificationCentreData:(NotificationListData _Nullable ) notificationDataList;
 
 +(void)GetUnreadPushNotification:(nvGetCount _Nullable )nvUnreadCount;
 +(void)getNotificationCenterCountWithConfiguration:(NVCenterStyleConfig *_Nullable)configuration countResult:(nvUnreadCenterCount _Nullable )unreadCenterCounts;

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -16,12 +16,16 @@
 			dependencies = (
 			);
 			name = notifyvisitors;
+			productName = notifyvisitors;
 		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
 		06C08F91CA200DA20EE5410D9F3B0D5A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		0B598414CF44CD016E4E498FFE8DC1E0 /* Pods-notifyvisitors_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DBFAA1D0649CD2F0D0977D81F28B1367 /* Pods-notifyvisitors_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		35BF74FF2B3186220000CAE3 /* notifyvisitors.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35BF74FE2B3186220000CAE3 /* notifyvisitors.xcframework */; };
+		35BF75002B3186220000CAE3 /* notifyvisitors.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35BF74FE2B3186220000CAE3 /* notifyvisitors.xcframework */; };
+		35BF75012B3186220000CAE3 /* notifyvisitors.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35BF74FE2B3186220000CAE3 /* notifyvisitors.xcframework */; };
 		40FDDAAD8756F9D54AAEF76FBB52DFB7 /* Pods-notifyvisitors_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBE8FF0F61F8E106AEDAF7F898D48E2 /* Pods-notifyvisitors_Tests-dummy.m */; };
 		7CED1CDF4B68C3ED93D193A45E22DBA0 /* Pods-notifyvisitors_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E657701DBD8A953007E8DAE6FB99D70 /* Pods-notifyvisitors_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		891DD41C0493DE1756D8D7D7B304A764 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
@@ -60,24 +64,24 @@
 		24C0B466CF74D83948477B8DECA31A56 /* Pods-notifyvisitors_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-notifyvisitors_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		29CEA50614DDCDFDAA58D7081000654F /* Pods-notifyvisitors_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-notifyvisitors_Example-Info.plist"; sourceTree = "<group>"; };
 		2E7D2711A93D54EA152F50AC7402A93D /* Pods-notifyvisitors_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-notifyvisitors_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		35BF74FE2B3186220000CAE3 /* notifyvisitors.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = notifyvisitors.xcframework; path = ../../notifyvisitors.xcframework; sourceTree = "<group>"; };
 		46CA4973C3832C31E57285C73BF39C6F /* notifyvisitors-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "notifyvisitors-xcframeworks.sh"; sourceTree = "<group>"; };
 		484378AD8D58B410887058C6C9495124 /* Pods-notifyvisitors_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-notifyvisitors_Example.modulemap"; sourceTree = "<group>"; };
 		4B7C932C060AC883FC37B964570B6BE4 /* Pods-notifyvisitors_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-notifyvisitors_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		4CBE8FF0F61F8E106AEDAF7F898D48E2 /* Pods-notifyvisitors_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-notifyvisitors_Tests-dummy.m"; sourceTree = "<group>"; };
-		5508E08520255E1B73614FA41B294D32 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		5508E08520255E1B73614FA41B294D32 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		60CAD7699AE46D5E774B2141448FDEF3 /* Pods-NotificationServiceExtension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NotificationServiceExtension-dummy.m"; sourceTree = "<group>"; };
 		657929648A847D166A2E94AA9C1986CB /* Pods-notifyvisitors_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-notifyvisitors_Tests-Info.plist"; sourceTree = "<group>"; };
 		6E657701DBD8A953007E8DAE6FB99D70 /* Pods-notifyvisitors_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-notifyvisitors_Example-umbrella.h"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		78218F892C7F49CAFA698695F67DC188 /* notifyvisitors.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = notifyvisitors.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		8005F12BDB56F9BE8779017128858D22 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		78218F892C7F49CAFA698695F67DC188 /* notifyvisitors.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = notifyvisitors.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8005F12BDB56F9BE8779017128858D22 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		81BEF0F937F46E3D7059AC357C2A86CC /* Pods-NotificationServiceExtension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NotificationServiceExtension-umbrella.h"; sourceTree = "<group>"; };
 		891282AF08F30DF46D94F5DFF909CA57 /* Pods-NotificationServiceExtension */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-NotificationServiceExtension"; path = Pods_NotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		911578274BE33045893B64102DCE5815 /* Pods-notifyvisitors_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-notifyvisitors_Example-dummy.m"; sourceTree = "<group>"; };
-		945204D8AE359EB95BE08C72778953F5 /* notifyvisitors.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = notifyvisitors.xcframework; sourceTree = "<group>"; };
 		98979007BDC4465DFDCB0167366CD5A2 /* Pods-notifyvisitors_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-notifyvisitors_Example.release.xcconfig"; sourceTree = "<group>"; };
 		98B0B07AF09426DB6E9E81CCBFB30C9C /* Pods-notifyvisitors_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-notifyvisitors_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A2EC258A3A39E9D8D63A976EB78DE070 /* Pods-notifyvisitors_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-notifyvisitors_Example"; path = Pods_notifyvisitors_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB53EB182E4FF83A93DAEC97EDD83E40 /* notifyvisitors.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = notifyvisitors.debug.xcconfig; sourceTree = "<group>"; };
 		BDBAFEB8085C93A92B5741CED325705A /* Pods-notifyvisitors_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-notifyvisitors_Tests.modulemap"; sourceTree = "<group>"; };
@@ -101,6 +105,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				891DD41C0493DE1756D8D7D7B304A764 /* Foundation.framework in Frameworks */,
+				35BF74FF2B3186220000CAE3 /* notifyvisitors.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +114,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1C9835FC251864DB4CBA61068767A98 /* Foundation.framework in Frameworks */,
+				35BF75002B3186220000CAE3 /* notifyvisitors.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,6 +123,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				06C08F91CA200DA20EE5410D9F3B0D5A /* Foundation.framework in Frameworks */,
+				35BF75012B3186220000CAE3 /* notifyvisitors.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,6 +187,7 @@
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				35BF74FE2B3186220000CAE3 /* notifyvisitors.xcframework */,
 				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
 			);
 			name = iOS;
@@ -245,7 +253,6 @@
 		D62F5ADCAA11751BF3E23EA2E9EE2265 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				945204D8AE359EB95BE08C72778953F5 /* notifyvisitors.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -496,7 +503,11 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-notifyvisitors_Tests/Pods-notifyvisitors_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-notifyvisitors_Tests/Pods-notifyvisitors_Tests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -521,7 +532,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -546,7 +560,11 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-NotificationServiceExtension/Pods-NotificationServiceExtension-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-NotificationServiceExtension/Pods-NotificationServiceExtension.modulemap";
 				OTHER_LDFLAGS = "";
@@ -580,7 +598,11 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-notifyvisitors_Tests/Pods-notifyvisitors_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-notifyvisitors_Tests/Pods-notifyvisitors_Tests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -677,7 +699,11 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-NotificationServiceExtension/Pods-NotificationServiceExtension-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-NotificationServiceExtension/Pods-NotificationServiceExtension.modulemap";
 				OTHER_LDFLAGS = "";
@@ -712,7 +738,11 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-notifyvisitors_Example/Pods-notifyvisitors_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-notifyvisitors_Example/Pods-notifyvisitors_Example.modulemap";
 				OTHER_LDFLAGS = "";
@@ -812,7 +842,11 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-notifyvisitors_Example/Pods-notifyvisitors_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-notifyvisitors_Example/Pods-notifyvisitors_Example.modulemap";
 				OTHER_LDFLAGS = "";
@@ -838,7 +872,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

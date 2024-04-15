@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0E443A437BC3788DAF468BA8 /* Pods_NotificationServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 717FBA91232C3F17E8A68E7C /* Pods_NotificationServiceExtension.framework */; };
+		3500E8072BCCEB910055B535 /* nvResourceValues.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3500E8062BCCEB910055B535 /* nvResourceValues.plist */; };
 		35B44C3A2B2C1E5E0014991C /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B44C392B2C1E5E0014991C /* NotificationService.swift */; };
 		35B44C3E2B2C1E5E0014991C /* NotificationServiceExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 35B44C372B2C1E5E0014991C /* NotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		35B44C4D2B2C458F0014991C /* otherExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B44C4C2B2C458F0014991C /* otherExtensions.swift */; };
@@ -56,6 +57,8 @@
 		07FD3101A7A3F6C66C96349C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		1C86DA7BEE655E753D532977 /* Pods-notifyvisitors_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-notifyvisitors_Example.debug.xcconfig"; path = "Target Support Files/Pods-notifyvisitors_Example/Pods-notifyvisitors_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		2D568C1CFA4F37F2574F997B /* Pods-NotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationServiceExtension.debug.xcconfig"; path = "Target Support Files/Pods-NotificationServiceExtension/Pods-NotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		3500E8062BCCEB910055B535 /* nvResourceValues.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = nvResourceValues.plist; sourceTree = "<group>"; };
+		3500E80C2BCCEBC00055B535 /* notifyvisitors.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = notifyvisitors.xcframework; path = Pods/../../notifyvisitors.xcframework; sourceTree = "<group>"; };
 		35B44C2F2B2B55620014991C /* notifyvisitors_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "notifyvisitors_Example-Bridging-Header.h"; sourceTree = "<group>"; };
 		35B44C372B2C1E5E0014991C /* NotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		35B44C392B2C1E5E0014991C /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
@@ -168,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACD41AFB9204008FA782 /* Info.plist */,
+				3500E8062BCCEB910055B535 /* nvResourceValues.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -215,6 +219,7 @@
 		B6FCC30A66C6030112C35527 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3500E80C2BCCEBC00055B535 /* notifyvisitors.xcframework */,
 				3B4270D7DEB50F49DAA9F611 /* Pods_notifyvisitors_Example.framework */,
 				9F4FAA4E5524B6F6B19E914B /* Pods_notifyvisitors_Tests.framework */,
 				717FBA91232C3F17E8A68E7C /* Pods_NotificationServiceExtension.framework */,
@@ -343,6 +348,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3500E8072BCCEB910055B535 /* nvResourceValues.plist in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,

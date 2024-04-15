@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'notifyvisitors'
-  s.version          = '7.0.3'
+  s.version          = '7.0.4'
   s.summary          = 'Best multi channel Customer Engagement Software for Your Business'
   
   s.description      = <<-DESC
@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/tagnpin/nv_ios_sdk.git', :tag => s.version.to_s }
   
   s.platform         = :ios
-  s.ios.deployment_target = '11.0'
+  s.ios.deployment_target = '12.0'
   s.requires_arc     = true
   s.preserve_path    = 'notifyvisitors.xcframework'
   s.vendored_frameworks = 'notifyvisitors.xcframework'

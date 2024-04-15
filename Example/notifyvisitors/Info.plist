@@ -40,5 +40,25 @@
 		<string>UIInterfaceOrientationPortrait</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 	</array>
+    
+    <key>CFBundleURLTypes</key>
+     <array>
+           <dict>
+         <key>CFBundleURLName</key>
+            <string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+                    <key>CFBundleURLSchemes</key>
+                    <array>
+        <string>myApp</string>
+            </array>
+            </dict>
+             </array>
+   <key>nvBrandID</key>
+            <integer>7577</integer>
+                 <key>nvSecretKey</key>
+               <string>DB52A5BXXXXXXXXXXXXXXXXXXXXXXXXX</string>
+                <key>nvPushCategory</key>
+                          <string>nvpush</string>
+                <key>nvViewAutoRedirection</key>
+                          <true/>       <!--OR--> <!-- <false/>-->
 </dict>
 </plist>

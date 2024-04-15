@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -23,9 +23,9 @@
 /* Begin PBXBuildFile section */
 		06C08F91CA200DA20EE5410D9F3B0D5A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		0B598414CF44CD016E4E498FFE8DC1E0 /* Pods-notifyvisitors_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DBFAA1D0649CD2F0D0977D81F28B1367 /* Pods-notifyvisitors_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		358A17C82BA044D40064B388 /* notifyvisitors.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 358A17C72BA044D40064B388 /* notifyvisitors.xcframework */; };
-		358A17C92BA044D40064B388 /* notifyvisitors.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 358A17C72BA044D40064B388 /* notifyvisitors.xcframework */; };
-		358A17CA2BA044D40064B388 /* notifyvisitors.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 358A17C72BA044D40064B388 /* notifyvisitors.xcframework */; };
+		3500E8092BCCEBA80055B535 /* notifyvisitors.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3500E8082BCCEBA80055B535 /* notifyvisitors.xcframework */; };
+		3500E80A2BCCEBA80055B535 /* notifyvisitors.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3500E8082BCCEBA80055B535 /* notifyvisitors.xcframework */; };
+		3500E80B2BCCEBA80055B535 /* notifyvisitors.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3500E8082BCCEBA80055B535 /* notifyvisitors.xcframework */; };
 		40FDDAAD8756F9D54AAEF76FBB52DFB7 /* Pods-notifyvisitors_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBE8FF0F61F8E106AEDAF7F898D48E2 /* Pods-notifyvisitors_Tests-dummy.m */; };
 		7CED1CDF4B68C3ED93D193A45E22DBA0 /* Pods-notifyvisitors_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E657701DBD8A953007E8DAE6FB99D70 /* Pods-notifyvisitors_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		891DD41C0493DE1756D8D7D7B304A764 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
@@ -64,7 +64,7 @@
 		24C0B466CF74D83948477B8DECA31A56 /* Pods-notifyvisitors_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-notifyvisitors_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		29CEA50614DDCDFDAA58D7081000654F /* Pods-notifyvisitors_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-notifyvisitors_Example-Info.plist"; sourceTree = "<group>"; };
 		2E7D2711A93D54EA152F50AC7402A93D /* Pods-notifyvisitors_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-notifyvisitors_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		358A17C72BA044D40064B388 /* notifyvisitors.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = notifyvisitors.xcframework; path = ../../notifyvisitors.xcframework; sourceTree = "<group>"; };
+		3500E8082BCCEBA80055B535 /* notifyvisitors.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = notifyvisitors.xcframework; path = ../../notifyvisitors.xcframework; sourceTree = "<group>"; };
 		46CA4973C3832C31E57285C73BF39C6F /* notifyvisitors-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "notifyvisitors-xcframeworks.sh"; sourceTree = "<group>"; };
 		484378AD8D58B410887058C6C9495124 /* Pods-notifyvisitors_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-notifyvisitors_Example.modulemap"; sourceTree = "<group>"; };
 		4B7C932C060AC883FC37B964570B6BE4 /* Pods-notifyvisitors_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-notifyvisitors_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -105,7 +105,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				891DD41C0493DE1756D8D7D7B304A764 /* Foundation.framework in Frameworks */,
-				358A17C82BA044D40064B388 /* notifyvisitors.xcframework in Frameworks */,
+				3500E8092BCCEBA80055B535 /* notifyvisitors.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,7 +114,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1C9835FC251864DB4CBA61068767A98 /* Foundation.framework in Frameworks */,
-				358A17C92BA044D40064B388 /* notifyvisitors.xcframework in Frameworks */,
+				3500E80A2BCCEBA80055B535 /* notifyvisitors.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,7 +123,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				06C08F91CA200DA20EE5410D9F3B0D5A /* Foundation.framework in Frameworks */,
-				358A17CA2BA044D40064B388 /* notifyvisitors.xcframework in Frameworks */,
+				3500E80B2BCCEBA80055B535 /* notifyvisitors.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,7 +187,7 @@
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				358A17C72BA044D40064B388 /* notifyvisitors.xcframework */,
+				3500E8082BCCEBA80055B535 /* notifyvisitors.xcframework */,
 				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
 			);
 			name = iOS;

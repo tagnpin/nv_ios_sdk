@@ -97,6 +97,9 @@ typedef void(^nv_UID)(NSString *_Nullable);
 +(void)trackEvents:(NSString *_Nullable)event_name Attributes:(NSMutableDictionary *_Nullable)attributes lifetimeValue:(NSString *_Nullable)ltv Scope:(int)scope;
 
 +(void)UserIdentifier:(NSString *_Nullable) userID UserParams:(NSMutableDictionary *_Nullable) UserParams;
+
+//+(void)userIdentifierWithUserParams:(NSDictionary *_Nullable)userParams;
+
 +(void)getNvUid:(nv_UID _Nullable)nvUID;
 
 +(void)Show:(NSMutableDictionary *_Nullable)UserTokens CustomRule:(NSMutableDictionary *_Nullable)customRule;

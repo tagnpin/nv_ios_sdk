@@ -98,7 +98,7 @@ typedef void(^nv_UID)(NSString *_Nullable);
 
 +(void)UserIdentifier:(NSString *_Nullable) userID UserParams:(NSMutableDictionary *_Nullable) UserParams;
 
-//+(void)userIdentifierWithUserParams:(NSDictionary *_Nullable)userParams;
++(void)userIdentifierWithUserParams:(NSDictionary *_Nullable)userParams;
 
 +(void)getNvUid:(nv_UID _Nullable)nvUID;
 

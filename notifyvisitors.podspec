@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'notifyvisitors'
-  s.version          = '7.2.1'
+  s.version          = '7.3.0'
   s.summary          = 'Best multi channel Customer Engagement Software for Your Business'
   
   s.description      = <<-DESC
@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
                          DESC
 
   s.homepage         = 'https://github.com/tagnpin/nv_ios_sdk'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  # s.screenshots    = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Mohammad Ashraf Ali' => 'ashraf@notifyvisitors.com' }
   s.source           = { :git => 'https://github.com/tagnpin/nv_ios_sdk.git', :tag => s.version.to_s }

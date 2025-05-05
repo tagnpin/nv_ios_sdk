@@ -23,8 +23,8 @@
 /* Begin PBXBuildFile section */
 		06C08F91CA200DA20EE5410D9F3B0D5A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		0B598414CF44CD016E4E498FFE8DC1E0 /* Pods-notifyvisitors_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DBFAA1D0649CD2F0D0977D81F28B1367 /* Pods-notifyvisitors_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		35AF33B92DC1F02B00441622 /* notifyvisitors.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35AF33B82DC1F02B00441622 /* notifyvisitors.xcframework */; };
-		35AF33BA2DC1F02B00441622 /* notifyvisitors.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35AF33B82DC1F02B00441622 /* notifyvisitors.xcframework */; };
+		3545C2552DC9073F00DBF776 /* notifyvisitors.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3545C2542DC9073F00DBF776 /* notifyvisitors.xcframework */; };
+		3545C2562DC9073F00DBF776 /* notifyvisitors.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3545C2542DC9073F00DBF776 /* notifyvisitors.xcframework */; };
 		40FDDAAD8756F9D54AAEF76FBB52DFB7 /* Pods-notifyvisitors_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBE8FF0F61F8E106AEDAF7F898D48E2 /* Pods-notifyvisitors_Tests-dummy.m */; };
 		7CED1CDF4B68C3ED93D193A45E22DBA0 /* Pods-notifyvisitors_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E657701DBD8A953007E8DAE6FB99D70 /* Pods-notifyvisitors_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		891DD41C0493DE1756D8D7D7B304A764 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
@@ -63,7 +63,7 @@
 		24C0B466CF74D83948477B8DECA31A56 /* Pods-notifyvisitors_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-notifyvisitors_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		29CEA50614DDCDFDAA58D7081000654F /* Pods-notifyvisitors_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-notifyvisitors_Example-Info.plist"; sourceTree = "<group>"; };
 		2E7D2711A93D54EA152F50AC7402A93D /* Pods-notifyvisitors_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-notifyvisitors_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		35AF33B82DC1F02B00441622 /* notifyvisitors.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = notifyvisitors.xcframework; path = ../../notifyvisitors.xcframework; sourceTree = "<group>"; };
+		3545C2542DC9073F00DBF776 /* notifyvisitors.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = notifyvisitors.xcframework; sourceTree = "<group>"; };
 		46CA4973C3832C31E57285C73BF39C6F /* notifyvisitors-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "notifyvisitors-xcframeworks.sh"; sourceTree = "<group>"; };
 		484378AD8D58B410887058C6C9495124 /* Pods-notifyvisitors_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-notifyvisitors_Example.modulemap"; sourceTree = "<group>"; };
 		4B7C932C060AC883FC37B964570B6BE4 /* Pods-notifyvisitors_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-notifyvisitors_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -76,12 +76,12 @@
 		78218F892C7F49CAFA698695F67DC188 /* notifyvisitors.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = notifyvisitors.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		8005F12BDB56F9BE8779017128858D22 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		81BEF0F937F46E3D7059AC357C2A86CC /* Pods-NotificationServiceExtension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NotificationServiceExtension-umbrella.h"; sourceTree = "<group>"; };
-		891282AF08F30DF46D94F5DFF909CA57 /* Pods-NotificationServiceExtension */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-NotificationServiceExtension"; path = Pods_NotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		891282AF08F30DF46D94F5DFF909CA57 /* Pods_NotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		911578274BE33045893B64102DCE5815 /* Pods-notifyvisitors_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-notifyvisitors_Example-dummy.m"; sourceTree = "<group>"; };
 		98979007BDC4465DFDCB0167366CD5A2 /* Pods-notifyvisitors_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-notifyvisitors_Example.release.xcconfig"; sourceTree = "<group>"; };
 		98B0B07AF09426DB6E9E81CCBFB30C9C /* Pods-notifyvisitors_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-notifyvisitors_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A2EC258A3A39E9D8D63A976EB78DE070 /* Pods-notifyvisitors_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-notifyvisitors_Example"; path = Pods_notifyvisitors_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2EC258A3A39E9D8D63A976EB78DE070 /* Pods_notifyvisitors_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_notifyvisitors_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB53EB182E4FF83A93DAEC97EDD83E40 /* notifyvisitors.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = notifyvisitors.debug.xcconfig; sourceTree = "<group>"; };
 		BDBAFEB8085C93A92B5741CED325705A /* Pods-notifyvisitors_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-notifyvisitors_Tests.modulemap"; sourceTree = "<group>"; };
 		BE43F1D98D15C2B2D1B0D7E97A25959B /* Pods-NotificationServiceExtension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NotificationServiceExtension-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -89,7 +89,7 @@
 		C751D8C98C7B8CAEBDC01F913C198194 /* Pods-NotificationServiceExtension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NotificationServiceExtension.modulemap"; sourceTree = "<group>"; };
 		C9D1EE3F312802E582E06EC9D0F1927E /* Pods-notifyvisitors_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-notifyvisitors_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		CA16D4E1C5ED9ECD32BC075F1D2FBEE3 /* Pods-NotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
-		CCCEF609E5050BE31D176AAE84402F54 /* Pods-notifyvisitors_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-notifyvisitors_Tests"; path = Pods_notifyvisitors_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCCEF609E5050BE31D176AAE84402F54 /* Pods_notifyvisitors_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_notifyvisitors_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB1A9632DBD381ED698E0C2512920B2 /* Pods-NotificationServiceExtension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NotificationServiceExtension-acknowledgements.plist"; sourceTree = "<group>"; };
 		D5BEB56A509E58E5381D5C3BD55BD50A /* Pods-NotificationServiceExtension-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NotificationServiceExtension-Info.plist"; sourceTree = "<group>"; };
 		DBFAA1D0649CD2F0D0977D81F28B1367 /* Pods-notifyvisitors_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-notifyvisitors_Tests-umbrella.h"; sourceTree = "<group>"; };
@@ -104,7 +104,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				891DD41C0493DE1756D8D7D7B304A764 /* Foundation.framework in Frameworks */,
-				35AF33B92DC1F02B00441622 /* notifyvisitors.xcframework in Frameworks */,
+				3545C2552DC9073F00DBF776 /* notifyvisitors.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,7 +113,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1C9835FC251864DB4CBA61068767A98 /* Foundation.framework in Frameworks */,
-				35AF33BA2DC1F02B00441622 /* notifyvisitors.xcframework in Frameworks */,
+				3545C2562DC9073F00DBF776 /* notifyvisitors.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,8 +185,8 @@
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				35AF33B82DC1F02B00441622 /* notifyvisitors.xcframework */,
 				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+				3545C2542DC9073F00DBF776 /* notifyvisitors.xcframework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
@@ -202,9 +202,9 @@
 		BA7F7198DFA250EAD98321B6DB864453 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				891282AF08F30DF46D94F5DFF909CA57 /* Pods-NotificationServiceExtension */,
-				A2EC258A3A39E9D8D63A976EB78DE070 /* Pods-notifyvisitors_Example */,
-				CCCEF609E5050BE31D176AAE84402F54 /* Pods-notifyvisitors_Tests */,
+				891282AF08F30DF46D94F5DFF909CA57 /* Pods_NotificationServiceExtension.framework */,
+				A2EC258A3A39E9D8D63A976EB78DE070 /* Pods_notifyvisitors_Example.framework */,
+				CCCEF609E5050BE31D176AAE84402F54 /* Pods_notifyvisitors_Tests.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -318,7 +318,7 @@
 			);
 			name = "Pods-NotificationServiceExtension";
 			productName = Pods_NotificationServiceExtension;
-			productReference = 891282AF08F30DF46D94F5DFF909CA57 /* Pods-NotificationServiceExtension */;
+			productReference = 891282AF08F30DF46D94F5DFF909CA57 /* Pods_NotificationServiceExtension.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		E01D70D793CA2CFD2AE8FA0F2B4B76A1 /* Pods-notifyvisitors_Example */ = {
@@ -337,7 +337,7 @@
 			);
 			name = "Pods-notifyvisitors_Example";
 			productName = Pods_notifyvisitors_Example;
-			productReference = A2EC258A3A39E9D8D63A976EB78DE070 /* Pods-notifyvisitors_Example */;
+			productReference = A2EC258A3A39E9D8D63A976EB78DE070 /* Pods_notifyvisitors_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		F815EAB58DEBC1B0378BFF431FCF15D5 /* Pods-notifyvisitors_Tests */ = {
@@ -356,7 +356,7 @@
 			);
 			name = "Pods-notifyvisitors_Tests";
 			productName = Pods_notifyvisitors_Tests;
-			productReference = CCCEF609E5050BE31D176AAE84402F54 /* Pods-notifyvisitors_Tests */;
+			productReference = CCCEF609E5050BE31D176AAE84402F54 /* Pods_notifyvisitors_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */

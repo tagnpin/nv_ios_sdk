@@ -82,7 +82,6 @@ typedef void(^nv_UID)(NSString *_Nullable);
 
 #pragma mark - INITIAL INTEGRATION METHODS (INITIALIZE Notifyvisitors SDK and Basic Integration Methods)
 
-//+(NVSDKCallbackUtils *_Nullable)nvRreturnSwiftClassInstance;
 +(void)Initialize:(NSString *_Nullable)nvMode;
 
 +(void)initializeWithBrandId:(NSInteger)brandID secretKey:(NSString *_Nullable)secretKey appMode:(NSString *_Nullable)nvMode launchingOptions:(NSDictionary *_Nullable)launchingOptions;

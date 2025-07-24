@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'notifyvisitors'
-  s.version          = '7.3.1'
+  s.version          = '7.3.2'
   s.summary          = 'Best multi channel Customer Engagement Software for Your Business'
   
   s.description      = <<-DESC

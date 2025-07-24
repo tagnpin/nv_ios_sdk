@@ -40,7 +40,7 @@ typedef void(^nv_UID)(NSString *_Nullable);
 @protocol notifyvisitorsDelegate <NSObject>
 
 @optional
--(void)NotifyvisitorsGetEventResponseWithUserInfo:(NSDictionary*_Nullable)userInfo DEPRECATED_MSG_ATTRIBUTE("first deprecated in Notifyvisitors iOS SDK 7.0.1 Use [notifyvisitors notifyvisitorsEventsResponseCallback:] (see notifyvisitors.h)");
+- (void)NotifyvisitorsGetEventResponseWithUserInfo:(NSDictionary*_Nullable)userInfo DEPRECATED_MSG_ATTRIBUTE("first deprecated in Notifyvisitors iOS SDK 7.0.1 Use [notifyvisitors notifyvisitorsEventsResponseCallback:] (see notifyvisitors.h)");
 -(void)notifyvisitorsEventsResponseCallback:(NSDictionary*_Nullable)callback;
 -(void)notifyvisitorsKnownUserIdentified:(NSDictionary*_Nullable)userInfo;
 @end
@@ -105,6 +105,8 @@ typedef void(^nv_UID)(NSString *_Nullable);
 
 +(void)continueUserActivityWith:(NSUserActivity*_Nullable)userActivity;
 +(void)scene:(UIScene *_Nullable)scene continueUserActivity:(NSUserActivity *_Nullable)userActivity API_AVAILABLE(ios(13.0));
+
++(NSDictionary *_Nullable)getSessionData;
 
 
 #pragma mark - InAppBanner AND InAppSurveys METHODS

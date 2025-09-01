@@ -43,6 +43,9 @@ typedef void(^nv_UID)(NSString *_Nullable);
 - (void)NotifyvisitorsGetEventResponseWithUserInfo:(NSDictionary*_Nullable)userInfo DEPRECATED_MSG_ATTRIBUTE("first deprecated in Notifyvisitors iOS SDK 7.0.1 Use [notifyvisitors notifyvisitorsEventsResponseCallback:] (see notifyvisitors.h)");
 -(void)notifyvisitorsEventsResponseCallback:(NSDictionary*_Nullable)callback;
 -(void)notifyvisitorsKnownUserIdentified:(NSDictionary*_Nullable)userInfo;
+-(void)notifyvisitorsNewDelegateMethod:(NSDictionary*_Nullable)userInfo;
+-(void)notifyvisitorsNudgeUiFinalized:(NSDictionary*_Nullable)callback;
+
 @end
 
 @interface NVCenterStyleConfig : NSObject
